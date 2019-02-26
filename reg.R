@@ -47,14 +47,6 @@ barplot(percentage[, 46:56], main = "近十年歌曲大小音階比例變化",
         xlab = "", ylab = "", ylim = c(0, 1), 
         col = c("#336699","#cc3300"),
         legend = c("小音階", "大音階"), beside = F)
-##
-# plot(mode, duration, col = "#ff9900", outlier = "n")
-# boxplot(duration~mode, data,
-#         boxwex = 0.5, names = c("小音階", "大音階"),
-#         col = "#336699", border = "#264d73", ylim = c(10, 1500) ,
-#         main = "音階與歌曲長度盒型圖",
-#         ylab = "歌曲長度(秒)")
-##
 
 panel.pearson <- function(x, y, ...) {
   horizontal <- (par("usr")[1] + par("usr")[2]) / 2; 
